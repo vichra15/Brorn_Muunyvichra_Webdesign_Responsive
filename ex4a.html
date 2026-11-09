@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exericse4</title>
+    <link rel="stylesheet" href="ex4.css">
+</head>
+
+<style>
+    .wrapper {
+        background: #ffffff;
+        min-height: calc(100vh - 40px);
+        display: grid;
+        place-items: center;
+    }
+
+    .content span {
+        padding: 8px 12px;
+        color: #ffffff;
+    }
+
+
+    .small {
+        display: none;
+    }
+
+    .big {
+        display: inline-block;
+        background: #8fc400;
+        font-size: 32px;
+        padding: 14px 18px;
+    }
+
+
+    @media(max-width: 600px) {
+        .big {
+            display: none;
+        }
+
+        .small {
+            display: inline-block;
+            background: #ff5533;
+            font-size: 12px;
+        }
+    }
+    
+</style>
+
+<body>
+    <div class="wrapper">
+        <div class="content">
+            <span class="small">I'm a SMALL🥲</span>
+            <span class="big">I'm a BIG😱</span>
+        </div>
+    </div>
+</body>
+</html>
